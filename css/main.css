@@ -38,9 +38,46 @@ section.slideshow-container {
   /* Next & previous buttons */
 }
 
+section.slideshow-container #slide1 {
+  background: url("../images/lg-img1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.slideshow-container #slide2 {
+  background: url("../images/lg-img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.slideshow-container #slide3 {
+  background: url("../images/lg-img3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.slideshow-container .controllers {
+  position: relative;
+  z-index: 3;
+  top: -250px;
+}
+
+section.slideshow-container .controllers a.next {
+  right: 0;
+}
+
+section.slideshow-container .mySlides {
+  height: 418px;
+}
+
 section.slideshow-container .mySlides img {
   width: 100%;
   height: 418px;
+}
+
+section.slideshow-container .mySlides h1 {
+  font-weight: bold;
+  font-size: 4.5em;
 }
 
 section.slideshow-container .prev, section.slideshow-container .next {
@@ -74,11 +111,14 @@ section.slideshow-container .prev, section.slideshow-container .next {
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
+  margin-top: 140px;
   position: absolute;
-  top: 50%;
   width: 100%;
   text-align: center;
+}
+
+.text p {
+  font-weight: 600;
 }
 
 /* Number text (1/3 etc) */
@@ -94,13 +134,15 @@ section.slideshow-container .prev, section.slideshow-container .next {
 .dots {
   text-align: center;
   z-index: 9;
+  top: -30px;
+  position: relative;
 }
 
-.dot {
+.dots .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin-left: 16px;
   background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
@@ -108,7 +150,7 @@ section.slideshow-container .prev, section.slideshow-container .next {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dots .dot.active, .dots .dot:hover {
   background-color: #e7ba2f;
 }
 
@@ -158,9 +200,22 @@ body {
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
+.main-container {
+  max-width: 1080px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sm {
+  color: #999999;
+  font-size: 10px;
+}
+
 header {
   border-top: 3px solid #e7ba2f;
   text-align: center;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 header h1.logo {
@@ -173,18 +228,6 @@ header h1.logo a {
   color: #000;
   font-family: "lucida";
   text-transform: capitalize;
-}
-
-.main-container {
-  max-width: 1080px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.sm {
-  color: #666666;
-  padding-bottom: 15px;
-  font-size: 13px;
 }
 
 section.main-container {
@@ -221,21 +264,21 @@ section.main-container .flex-container .container-left .content .content-text {
 
 section.main-container .flex-container .container-left .content .content-text h3 {
   font-weight: 900;
-  padding-bottom: 14px;
   word-break: break-all;
 }
 
 section.main-container .flex-container .container-left .content .content-text h4 {
-  font-weight: normal;
+  font-weight: 500;
   word-break: break-all;
-}
-
-section.main-container .flex-container .container-left .content .content-text:hover {
-  cursor: pointer;
+  font-size: 12px;
 }
 
 section.main-container .flex-container .container-left .content .content-text:hover h3 {
   color: #e7ba2f;
+}
+
+section.main-container .flex-container .container-left .content:hover {
+  cursor: pointer;
 }
 
 section.main-container .flex-container .container-left button.left-clickable {
@@ -264,6 +307,19 @@ section.main-container .flex-container .container-right .sidebar-container {
   padding: 20px;
 }
 
+section.main-container .flex-container .container-right .sidebar-container a {
+  text-decoration: none;
+}
+
+section.main-container .flex-container .container-right .sidebar-container a .dummy {
+  width: 300px;
+  height: 300px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 50%;
+}
+
 section.main-container .flex-container .container-right .sidebar-container h2 {
   padding-top: 40px;
   text-align: center;
@@ -276,6 +332,10 @@ section.main-container .flex-container .container-right .sidebar-container .reco
   display: flex;
   margin-top: 20px;
   height: 63px;
+}
+
+section.main-container .flex-container .container-right .sidebar-container .recommend-container:hover {
+  cursor: pointer;
 }
 
 section.main-container .flex-container .container-right .sidebar-container .recommend-container img {

@@ -12,23 +12,25 @@ html(lang="en")
                 a(href="#") website logo
 
         section.slideshow-container
-            .mySlides.fade
-                img(src="images/lg-img1.png", alt="Image 1")
+            #slide1.mySlides.fade
                 .text 
-                    h1 Caption One
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, neque.
-            .mySlides.fade
-                img(src="images/lg-img2.png", alt="Image 2")
+                    h1 キャッチコピーが入ります。
+                    p サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                    p サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+            #slide2.mySlides.fade
                 .text 
-                    h1 Caption two
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nemo neque ex sapiente harum laudantium ipsum natus sed molestiae est!
-            .mySlides.fade
-                img(src="images/lg-img3.png", alt="Image 3")
+                    h1 キャッチコピーが入ります。
+                    p サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                    p サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+            #slide3.mySlides.fade
                 .text 
-                    h1 Caption Three
-                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptates quae, voluptatum blanditiis necessitatibus sequi vitae dolorem nam iure praesentium.
-            a.prev(onclick="plusSlides(-1)") &#10094;
-            a.next(onclick="plusSlides(1)") &#10095;
+                    h1 キャッチコピーが入ります。
+                    p サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                    p サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+            .main-container.controllers
+                a.prev(onclick="plusSlides(-1)") &#10094;
+                a.next(onclick="plusSlides(1)") &#10095;
+                
             .dots
                 span.dot(onclick="currentSlide(1)")
                 span.dot(onclick="currentSlide(2)")
@@ -37,86 +39,86 @@ html(lang="en")
         section.main-container
             .flex-container
                 .container-left
-                    .content
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img1.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
-                    .content
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img2.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
-                    .content
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img1.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
-                    .content
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img1.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
-                    .content
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img1.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
-                    .content
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img1.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
-                    .content
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img1.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
-                    .content
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img1.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
-                    .content
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img1.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
-                    .content
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
+                    .content(onclick="window.location='index.html'")
                         img(src="images/md-img1.png", alt="dummy image")
                         .content-text
                             h6.sm 2016.01.01
-                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト
-                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
+                            h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            h4 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…
 
                     
-                    button.left-clickable More
+                    button.left-clickable(onclick="window.location='index.html'") More
                             span &#10095;
                 .container-right
                     .sidebar-container
                         a(href="#")
-                            img(src="https://via.placeholder.com/300.png", alt="dummy image")
+                            .dummy Dummy banner
                         h2 Recommend
-                        .recommend-container
+                        .recommend-container(onclick="window.location='index.html'")
                             img(src="images/sm-img.png", alt="dummy image")
                             .recommend-text
                                 h5 サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
                                 h6.sm.bot 2016.03.26
-                        .recommend-container
+                        .recommend-container(onclick="window.location='index.html'")
                             img(src="images/sm-img.png", alt="dummy image")
                             .recommend-text
                                 h5 サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
                                 h6.sm.bot 2016.03.26
-                        .recommend-container
+                        .recommend-container(onclick="window.location='index.html'")
                             img(src="images/sm-img.png", alt="dummy image")
                             .recommend-text
                                 h5 サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
