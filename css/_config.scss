@@ -1,0 +1,21 @@
+
+
+@font-face{
+    font-family: 'lucida';  
+    src: url('../fonts/Lucida-Calligraphy-Italic.TTF');
+}
+
+@font-face{
+    font-family: 'helvetica';  
+    src: url('../fonts/helvetica.ttf');
+}
+
+$colors:(
+    colorBlack: #000,
+    colorWhite: #fff,
+    secondary: #e7ba2f
+);
+
+@function color($name){
+    @return map-get($colors,$name);
+};

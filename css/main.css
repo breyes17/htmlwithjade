@@ -8,38 +8,24 @@ overall-width: 1400px
 container: 1080px
 
 */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@font-face {
+  font-family: 'lucida';
+  src: url("../fonts/Lucida-Calligraphy-Italic.TTF");
 }
 
-body {
-  background-color: #fff;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+@font-face {
+  font-family: 'helvetica';
+  src: url("../fonts/helvetica.ttf");
 }
 
-header {
-  border-top: 3px solid #e7ba2f;
-  text-align: center;
+@font-face {
+  font-family: 'lucida';
+  src: url("../fonts/Lucida-Calligraphy-Italic.TTF");
 }
 
-header a {
-  text-decoration: none;
-  color: #000;
-}
-
-.main-container {
-  max-width: 1080px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.sm {
-  color: #666666;
-  padding-bottom: 15px;
-  font-size: 13px;
+@font-face {
+  font-family: 'helvetica';
+  src: url("../fonts/helvetica.ttf");
 }
 
 /* Slideshow container */
@@ -52,6 +38,11 @@ section.slideshow-container {
   /* Next & previous buttons */
 }
 
+section.slideshow-container .mySlides img {
+  width: 100%;
+  height: 418px;
+}
+
 section.slideshow-container .prev, section.slideshow-container .next {
   cursor: pointer;
   position: absolute;
@@ -60,7 +51,6 @@ section.slideshow-container .prev, section.slideshow-container .next {
   padding: 16px;
   margin-top: -22px;
   color: white;
-  font-weight: bold;
   font-size: 18px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
@@ -69,20 +59,15 @@ section.slideshow-container .prev, section.slideshow-container .next {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding-left: 43px;
-  padding-right: 43px;
+  padding-left: 0;
+  padding-right: 0;
   font-size: 50px;
 }
 
 /* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  color: #cccccc;
 }
 
 /* Caption text */
@@ -91,7 +76,7 @@ section.slideshow-container .prev, section.slideshow-container .next {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 50%;
   width: 100%;
   text-align: center;
 }
@@ -160,6 +145,52 @@ section.slideshow-container .prev, section.slideshow-container .next {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: #fff;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+header {
+  border-top: 3px solid #e7ba2f;
+  text-align: center;
+}
+
+header h1.logo {
+  margin-top: 28px;
+  margin-bottom: 27px;
+}
+
+header h1.logo a {
+  text-decoration: none;
+  color: #000;
+  font-family: "lucida";
+  text-transform: capitalize;
+}
+
+.main-container {
+  max-width: 1080px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sm {
+  color: #666666;
+  padding-bottom: 15px;
+  font-size: 13px;
+}
+
+section.main-container {
+  position: relative;
+}
+
 section.main-container .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,11 +238,16 @@ section.main-container .flex-container .container-left .left-clickable {
   background-color: #333333;
   color: #fff;
   text-align: center;
+  margin: 0 auto;
+  width: 405px;
+  margin-top: 100px;
 }
 
 section.main-container .flex-container .container-left .left-clickable a {
   text-decoration: none;
   color: #fff;
+  font-family: 'helvetica';
+  margin-top: 50%;
 }
 
 section.main-container .flex-container .container-right .sidebar-container {
@@ -260,21 +296,56 @@ section.main-container .flex-container .container-right .sidebar-container .dumm
   background-color: #737373;
 }
 
+section.main-container .flex-container .container-right .sidebar-container .dummy-banner a:last-child {
+  margin-bottom: 0;
+}
+
+.arrowup {
+  margin-top: 55px;
+  position: relative;
+  padding-bottom: 20px;
+  right: 0;
+}
+
+.arrowup a {
+  color: #000;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+}
+
 footer {
-  margin-top: 90px;
+  margin-top: 20px;
   color: #afafaf;
   background: #000;
   height: 45px;
   font-size: 17px;
+  overflow: hidden;
 }
 
-footer .main-container .h5-left {
-  margin: 15px 0;
-  float: left;
+footer .main-container {
+  position: relative;
+  padding-top: 15px;
+}
+
+footer .main-container a {
+  color: #afafaf;
+}
+
+footer .main-container a .h5-left {
+  position: absolute;
+  font-weight: normal;
+  left: 0;
+}
+
+footer .main-container a .h5-left span {
+  margin-left: 20px;
 }
 
 footer .main-container .h5-right {
-  margin: 15px 0;
-  float: right;
+  position: absolute;
+  font-weight: normal;
+  right: 0;
+  font-family: 'helvetica';
 }
 /*# sourceMappingURL=main.css.map */
